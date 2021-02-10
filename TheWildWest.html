@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>המערב הפרוע</title>
+    <meta name="description" content="המערב הפרוע" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="דין עמרני, מאי פולג ושיר ינאי" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="Logo.png" /> <!--הלוגו של המשחק שלכם-->
+                <p>המערב הפרוע</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                <img src="aboutUs3.png" />
+            </p>
+            <div>
+                <img id="hit_link" src="HITLogo.png" />
+                <a href="https://www.hit.ac.il/telem/overview">
+                    <p class="link">הפקולטה לטכנולוגיות למידה</p>
+                </a>
+                <p class="link2">
+                    <a href="https://www.freepik.com/">freepik</a> באתר זה נעשה שימוש בגרפיקות מאתר
+                    
+                </p>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>
+                <img src="howToPlay.png" />
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="https://deanikk.github.io/TheWildWest/wild_west.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
